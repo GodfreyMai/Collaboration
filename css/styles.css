@@ -38,7 +38,7 @@ font-size: 14px;
 .hero-section{
   width: 100vw;
   max-width: 100%;
-  /* added tyhe max-width to solve the problem of width extending and yielding horizontal scrolls */
+  /* added the max-width to solve the problem of width extending and yielding horizontal scrolls */
   height: 1080px;
   background-color: #0c1014;
 }
@@ -67,6 +67,23 @@ font-size: 14px;
 .nav-links li a{
   font-size: 22px;
   font-weight: 400;
+  /* A */
+  background-image: linear-gradient(to right, #0066ff 0%,#00ffe0 50%, #fcf9ff 50%);
+  /* To right, 04 colors with their opacities. The percentage is the opacity */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  /* width and height. The intention is to cover the text more */
+  background-position: 100%;
+  /* or background position: x y; */
+  /* we plan to use the psuedo property to bring the background position back to plave. Hence the hover effect */
+  /* B */
+  /* A-B is for styling the background of the links hrefs. You won't be able to see because the background position has been shifted out by 100%. We'll use the hover effect to bring it back */
+  transition: background-position 0.3s ease;
+  /* transition property is always asigned to the parent. The default is set to ease. the "background-position" is just the name of the property you are applying to, the transition time and then the type. */
+}
+.nav-links li a:hover{
+  background-position: 0% 100%;
 }
 
 .btn{
@@ -79,6 +96,16 @@ font-size: 14px;
   display: flex;
   justify-content: center;
   align-items: center;
+  /* setting up for hover below */
+  background-image: linear-gradient(to right,#0066ff 0%,#00ffe0 50%,#0c1014 50%);
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: all 0.3s ease-out;
+}
+.btn:hover {
+  background-position: 0 100%;
+  border: none;
+  font-weight: 600;
 }
 /* ===================Hero Title====================== */
 .hero-content{
@@ -127,6 +154,8 @@ font-size: 14px;
 margin: 5% auto;
 position: relative;
 }
+
+
 .signal{
   position: absolute;
   height: 100px;
