@@ -1,41 +1,42 @@
 /* ===================Global Settings====================== */
 /* Note that in css, the styles stat being apllied top-down */
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-html,body{ 
+html,
+body {
   font-weight: 300;
   font-size: 10px;
   color: #fcf9ff;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
 }
-a{
+a {
   text-decoration: none;
   color: #fcf9ff;
 }
-li{
+li {
   list-style: none;
 }
-h2{
+h2 {
   font-size: 60px;
   font-weight: 500;
 }
-h3{
+h3 {
   font-size: 32px;
 }
-h4{
-font-size: 24px;
+h4 {
+  font-size: 24px;
 }
-h5{
-font-size: 18px;
+h5 {
+  font-size: 18px;
 }
-h6{
-font-size: 14px;
+h6 {
+  font-size: 14px;
 }
 /* ===================Hero section====================== */
-.hero-section{
+.hero-section {
   width: 100vw;
   max-width: 100%;
   /* added the max-width to solve the problem of width extending and yielding horizontal scrolls */
@@ -43,7 +44,7 @@ font-size: 14px;
   background-color: #0c1014;
 }
 /* ===================navbar====================== */
-.navbar{
+.navbar {
   height: 80px;
   width: 100vw;
   position: fixed;
@@ -52,23 +53,28 @@ font-size: 14px;
   justify-content: space-evenly;
   align-items: center;
 }
-.nav-logo{
+.nav-logo {
   height: 35px;
   width: auto;
 }
 /* If the width property is set to a percentage and the height property is set to "auto", the image will be responsive and scale up and down: you could as well use max-height instead of height */
-.nav-links{
+.nav-links {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex: 0 0 60%;
   /* flex: flex-grow| flex-shrink| flex-basis */
 }
-.nav-links li a{
+.nav-links li a {
   font-size: 22px;
   font-weight: 400;
   /* A */
-  background-image: linear-gradient(to right, #0066ff 0%,#00ffe0 50%, #fcf9ff 50%);
+  background-image: linear-gradient(
+    to right,
+    #0066ff 0%,
+    #00ffe0 50%,
+    #fcf9ff 50%
+  );
   /* To right, 04 colors with their opacities. The percentage is the opacity */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -82,11 +88,11 @@ font-size: 14px;
   transition: background-position 0.3s ease;
   /* transition property is always asigned to the parent. The default is set to ease. the "background-position" is just the name of the property you are applying to, the transition time and then the type. */
 }
-.nav-links li a:hover{
+.nav-links li a:hover {
   background-position: 0% 100%;
 }
 
-.btn{
+.btn {
   width: 200px;
   height: 40px;
   border: 1px groove #008cff;
@@ -97,7 +103,12 @@ font-size: 14px;
   justify-content: center;
   align-items: center;
   /* setting up for hover below */
-  background-image: linear-gradient(to right,#0066ff 0%,#00ffe0 50%,#0c1014 50%);
+  background-image: linear-gradient(
+    to right,
+    #0066ff 0%,
+    #00ffe0 50%,
+    #0c1014 50%
+  );
   background-size: 200% 100%;
   background-position: 100%;
   transition: all 0.3s ease-out;
@@ -108,7 +119,7 @@ font-size: 14px;
   font-weight: 600;
 }
 /* ===================Hero Title====================== */
-.hero-content{
+.hero-content {
   text-align: center;
   font-size: 12vw;
   /* using the vw correlation above for the font size partially creates responsiveness and as such the size adjusts in relation to the view width */
@@ -116,17 +127,17 @@ font-size: 14px;
   position: relative;
   top: 15%;
 }
-.hero-content h1:first-of-type{
+.hero-content h1:first-of-type {
   background-image: linear-gradient(to right bottom, #f53c95, #0044ff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.hero-content h1:last-of-type{
+.hero-content h1:last-of-type {
   background-image: linear-gradient(to right bottom, #004bfa, #02f18e);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.hero-images{
+.hero-images {
   position: absolute;
   display: flex;
   justify-content: space-between;
@@ -134,29 +145,28 @@ font-size: 14px;
   top: 15%;
   padding: 0 5px;
 }
-.hero-images img{
+.hero-images img {
   width: 15vw;
   /* using the vw correlation above for the font size partially creates responsiveness and as such the size adjusts in relation to the view width */
   height: auto;
 }
-.hero-desc{
+.hero-desc {
   text-align: center;
   width: 100%;
   position: relative;
   top: 25%;
 }
-.hero-desc p{
+.hero-desc p {
   font-size: 1.5vw;
   font-weight: 300;
   line-height: 1.7;
 }
-.download-btn{
-margin: 5% auto;
-position: relative;
+.download-btn {
+  margin: 5% auto;
+  position: relative;
 }
 
-
-.signal{
+.signal {
   position: absolute;
   height: 100px;
   width: auto;
@@ -164,3 +174,59 @@ position: relative;
   top: -50px;
   transform: rotate(-15deg);
 }
+
+/* ----------------------App Section------------------------ */
+/* Background */
+.app-section {
+  height: 1000px;
+  width: 100vw;
+  max-width: 100%;
+  position: relative;
+  background-image: linear-gradient(
+    to right bottom,
+    #6f00ff 0%,
+    #1100ff 40%,
+    #ff004d 55%,
+    #ff3d00 100%
+  );
+
+}
+/* .app-section {
+  height: 1000px;
+  width: 100vw;
+  max-width: 100%;
+  position: relative;
+  background-image: linear-gradient(
+    to right top,
+    #1100ff 0%,
+    #6f00ff 100%
+  );
+}
+.backdrop{
+  height: 1000px;
+  width: 100vw;
+  max-width: 100%;
+  background-image: linear-gradient(to left bottom, #ff004d 0%, #ff3d00 100%);
+  clip-path: polygon(0% 100%, 100% 0%, 100% 100%);
+} */
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+.app-window{
+  width: 1400px;
+  height: 85%;
+  position: absolute;
+  background-color: rgba(0,0,0,0.9);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* could not use display flex because of the absolute condition */
+
+  border-radius: 10px;
+  backdrop-filter: blur(75px);
+  /* the code below will work for safira and chrome scenarios */
+  -webkit-backdrop-filter: blur(75px);
+  box-shadow: 0px 0px 75px 10px #000;
+  /* filter: drop-shadow(0px 5px 10px #000); */
+
+}
+
