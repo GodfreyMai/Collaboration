@@ -94,7 +94,7 @@ h6 {
 }
 .nav-links li a:hover {
   background-position: 0% 100%;
-  font-size: 23px;
+
 }
 
 .btn {
@@ -190,8 +190,8 @@ h6 {
   background-image: linear-gradient(
     to right bottom,
     #6f00ff 0%,
-    #1100ff 40%,
-    #ff004d 55%,
+    #1100ff 30%,
+    #ff004d 75%,
     #ff3d00 100%
   );
 }
@@ -287,6 +287,7 @@ h6 {
 }
 .server:hover {
   box-shadow: 0 0 5px 4px #fcf9ff;
+  transform: scale(1.1);
 }
 .app-logo {
   margin-bottom: 20%;
@@ -419,7 +420,14 @@ h6 {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  margin-right: -5px;
+  /* margin-right: -5px; */
+  transition: all 0.1s ease-in-out;
+  
+}
+.chat-users img:hover{
+  transform: scale(1.6);
+  box-shadow: 0 0 10px rgba(2, 241, 142, 0.7);
+  cursor: pointer;
 }
 .add-user {
   background-color: #00aee5;
@@ -619,4 +627,121 @@ color: #02f18e;
 .widget-4 img, .widget-5 img{
   height: 30px;
 }
+/*--------------------------Stas-Bar-Section--------------------------------- */
 
+.stats-section{
+  height: 120px;
+  width: 100%;
+  background-color: #1100ff;
+  /* background-color: rgba(20, 12, 12, 0.5);
+  backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(40px); */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 250px;
+}
+.stats{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: auto;
+  width: 100%;
+}
+.stats h3{
+  font-weight: 500;
+}
+.stats p{
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: 400;
+}
+.stats-1, .stats-2, .stats-3{
+  border-right: 4px solid #fcf9ff;
+}
+/* -------------------------Why Sectrion---------------------------------- */
+.why-section{
+  height: 900px;
+  width: 100%;
+  background-color: #0c1014;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 50px;
+
+}
+.why-section-left{
+  height: 100%;
+  flex: 0 0 50%;
+
+}
+.l-angle{
+  margin-left: 40px;
+  margin-top: 10px;
+
+}
+.key-points{
+  margin-left: 120px;
+  margin-top: -15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 70%;
+}
+.why-section-left h4{
+  font-weight: 600;
+  margin-bottom: 2%;
+}
+.why-section-left p{
+  font-size: 18px;
+  color: #a7a7a7;
+  line-height: 1.7;
+  text-align: justify;
+  margin: 5% 0;
+}
+.why-section-right{
+  height: 100%;
+  flex: 0 0 50%;
+}
+.why-section-right img{
+height: 100%;
+width: auto;
+}
+
+/* ===========================About Section================================= */
+.about-section{
+  height: 800px;
+  background-color: #fcf9ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about-section-content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 50px;
+}
+.about-section-content img{
+height: 65vh;
+width: 100%;
+margin: 0 50px;
+
+}
+.about-image{
+  filter: drop-shadow(0px 0px 100px 10px #000);
+}
+.about-span{
+  color: #2020ff;
+  font-weight: 600;
+  
+}
+.about-section-content{
+  color: #000;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 1.3;
+}
