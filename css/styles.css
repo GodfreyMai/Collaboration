@@ -472,13 +472,13 @@ h6 {
 }
 
 .chat-users:hover img {
-  filter: blur(10px);
+  filter: blur(2px);
   transform: scale(0.9);
 
 }
 
 .chat-users img:hover {
-  transform: scale(1.1);
+  transform: scale(1.5);
   box-shadow: 0 0 10px rgba(2, 241, 142, 0.7);
   filter: blur(0);
   cursor: pointer;
@@ -961,7 +961,7 @@ select {
   width: 100%;
   padding: 12px;
   margin: 8px 0;
-  background-color: #f3e7d9;
+  background-color: #f8f6f3;
   border: none;
 }
 .check-box{
@@ -971,7 +971,7 @@ input[type="check-box"]{
   margin-top: 20px;
 }
 input[type="submit"]{
-  background-color: #11dd22;
+  background-color: #0ca3f5;
   color: white;
   border: none;
   font-size: 20px;
