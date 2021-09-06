@@ -247,11 +247,26 @@
   .support-article img{
     display: none;
   }
+ 
   .support-article{
     margin-top: 10%;
     width: 400px;
     height: 650px;
+    position: relative;
   }
+  .support-article::before {
+    content: "";
+    background-image: url("../props/svg/05-help_section/01-help.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0.1;
+  }
+  
 
   /* ================================Footer section===================== */
 

@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css/animation.css" />
     <link rel="stylesheet" href="./css/vendor.css" />
     <!-- Notice that the css styles for the vendor get applied first and then can be overwritten by the styles below in case of conflict -->
     <link rel="stylesheet" href="./css/styles.css" />
@@ -48,8 +49,8 @@
       <!-- Hero content -->
       <div class="hero-content">
         <div class="hero-text">
-          <h1>Collaboration</h1>
-          <h1>Redefined</h1>
+          <h1 class="slide-left">Collaboration</h1>
+          <h1 class="slide-right">Redefined</h1>
         </div>
 
         <div class="hero-images">
@@ -57,12 +58,12 @@
           <img
             src="./props/svg/01-hero_section/02-left-man.svg"
             alt="left-man"
-            class="left-man"
+            class="left-man bounce-1"
           />
           <img
             src="./props/svg/01-hero_section/03-right-man.svg"
             alt="right-man"
-            class="right-man"
+            class="right-man bounce-2"
           />
         </div>
       </div>
@@ -77,7 +78,7 @@
           <img
             src="./props/svg/01-hero_section/04-signal-wave.svg"
             alt="signal"
-            class="signal"
+            class="signal blink"
           />
           <a href="#">Download Now</a>
         </div>
