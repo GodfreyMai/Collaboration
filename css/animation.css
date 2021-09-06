@@ -2,6 +2,7 @@
 .bounce-1 {
   animation-name: bounce-1;
   animation-timing-function: linear;
+  animation-delay: 3s;
   animation-duration: 2s;
   animation-iteration-count: infinite;
   transform-origin: top;
@@ -17,9 +18,11 @@
     transform: translateY(0);
   }
 }
+
 .bounce-2 {
   animation-name: bounce-2;
   animation-timing-function: linear;
+  animation-delay: 3s;
   animation-duration: 2s;
   animation-iteration-count: infinite;
   transform-origin: top;
@@ -35,56 +38,56 @@
     transform: translateY(0);
   }
 }
-.blink{
+.blink {
   animation-name: blink;
   animation-timing-function: linear;
   animation-duration: 2s;
   animation-iteration-count: infinite;
 }
-@keyframes blink{
-  0%{
-opacity: 0;
+@keyframes blink {
+  0% {
+    opacity: 0;
   }
-  50%{
-opacity: 1;
+  50% {
+    opacity: 1;
   }
-  100%{
-opacity: 0;
+  100% {
+    opacity: 0;
   }
 }
-.slide-right{
+.slide-right {
   animation-name: slide-right;
   animation-timing-function: linear;
   animation-duration: 3s;
   animation-iteration-count: 1;
   transform-origin: right;
 }
-@keyframes slide-right{
-  0%{
-transform: translateX(-2000px);
+@keyframes slide-right {
+  0% {
+    transform: translateX(-2000px);
   }
-  50%{
-transform: translateX(-1000px);
+  50% {
+    transform: translateX(-1000px);
   }
-  100%{
-transform: translateX(0);
+  100% {
+    transform: translateX(0);
   }
 }
-.slide-left{
+.slide-left {
   animation-name: slide-left;
   animation-timing-function: linear;
   animation-duration: 3s;
   animation-iteration-count: 1;
   transform-origin: left;
 }
-@keyframes slide-left{
-  0%{
-transform: translateX(2000px);
+@keyframes slide-left {
+  0% {
+    transform: translateX(2000px);
   }
-  50%{
-transform: translateX(1000px);
+  50% {
+    transform: translateX(1000px);
   }
-  100%{
-transform: translateX(0);
+  100% {
+    transform: translateX(0);
   }
 }
