@@ -137,6 +137,11 @@ h6 {
   font-weight: 600;
 }
 
+#nav-toggle{
+  position: absolute;
+  top: -100px;
+}
+
 /* ===================Hero Title====================== */
 .hero-content {
   text-align: center;
@@ -242,7 +247,7 @@ h6 {
   background-color: rgba(0, 0, 0, 0.9);
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%,-50%);
   /* could not use display flex because of the absolute condition */
 
   border-radius: 10px;
@@ -617,8 +622,8 @@ ion-icon:hover {
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  flex: 0 0 25%;
-  background-color: #161b1f;
+  width: 20%;
+  flex: 0 0 20%;  background-color: #161b1f;
   border-radius: 0 10px 10px 0;
   padding: 10px;
 }
